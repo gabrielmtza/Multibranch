@@ -1,10 +1,2 @@
-pipeline {
-    agent any
-    stages {
-        stage('print') {
-            steps {
-                bat 'java -version'
-            }
-        }
-    }
-}
+@Library('my-shared-library@master') _
+test()
